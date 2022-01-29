@@ -9,12 +9,14 @@ Click the following link for a video demonstration: [Software Demo Video](https:
 
 # Development Environment
 
+* Java Development Kit (JDK)
 * IntelliJ
 * Kotlin v1.6.10
 * Git / GitHub
 
 # Useful Websites
 
+* [JDK.java.net](https://jdk.java.net/)
 * [Kotlin Server Side](https://kotlinlang.org/lp/server-side/)
 * [Jet Brains IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * [Kotlin Basic Syntax](https://kotlinlang.org/docs/basic-syntax.html)
