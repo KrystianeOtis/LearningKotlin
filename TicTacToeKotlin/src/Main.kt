@@ -8,6 +8,7 @@ private var answer = ""
 
 
 fun main(){
+    //asks player for size of the board (doesn't have to be 3X3
     println("Please enter size of your board:")
     val scanner = Scanner(System.`in`)
     val size = Integer.parseInt(scanner.nextLine())
@@ -15,6 +16,7 @@ fun main(){
     board = Board(size)
     board.printBoard()
 
+    //while loop prompts players for their move coordinates
     while(!board.isGameOver){
         takeTurns()
         println("$currentPlayer's turn")
@@ -33,6 +35,7 @@ fun main(){
     }
 }
 
+//function alternates turns
 fun takeTurns(){
     currentPlayer = if (player1 == currentPlayer) {
         player2
@@ -41,6 +44,7 @@ fun takeTurns(){
     }
 }
 
+//function returns true if the player says yes to playing again
 fun isPlayingAgain(answer: String): Boolean{
     return(answer.equals("y", ignoreCase = true)
             || answer.equals("yes", ignoreCase = true))
